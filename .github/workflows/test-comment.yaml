@@ -7,8 +7,7 @@ on:
 jobs:
   comment-with-actions:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: "dumb github context"
-      run: echo "${{toJSON(github.event)}}" | jq
-      shell: bash 
-
+        run: echo "${{toJSON(github.event)}}" | jq
+        shell: bash
