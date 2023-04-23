@@ -27,6 +27,9 @@ jobs:
   comment-with-api:
     runs-on: ubuntu-latest
     steps:
+      - name: Install gh CLI
+        run: |
+          npm install -g gh
       - name: Create comment with API
         run: |
           gh api \
