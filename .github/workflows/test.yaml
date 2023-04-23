@@ -15,12 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: test action
-         run: echo "Hello World"
-         shell: bash
+        run: echo "Hello World"
+        shell: bash
 
   test-terminate:
     runs-on: ubuntu-latest
     steps:
       - name: terminate test
-         run: echo "Good bye World"
-         shell: bash 
+        run: echo "Good bye World"
+        shell: bash
