@@ -1,0 +1,21 @@
+name: app frontend
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      name: Install yarn
+      run: npm install -g yarn
+      run: yarn lint
+      run: yarn prettier
+  
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      run: yarn build
