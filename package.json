@@ -1,0 +1,8 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rks1995/github-actions.git",
+  "author": "rks-1995 <Ratnakumar.singh@rap.ventures>",
+  "license": "MIT"
+}
