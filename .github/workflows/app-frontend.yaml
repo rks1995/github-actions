@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install yarn
-        run: npm install -g yarn
-        run: yarn lint
-        run: yarn prettier
+        run: |
+          npm install -g yarn
+          yarn lint
+          yarn prettier
